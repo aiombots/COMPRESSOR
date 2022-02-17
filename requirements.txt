@@ -1,0 +1,13 @@
+python-decouple
+telethon
+ethon==1.0.7
+telethon-tgcrypto
+cryptg
+pymongo
+motor
+pymongo[srv]
+dnspython
+telegraph
+Pillow>=5.3.0
+requests
+heroku3
