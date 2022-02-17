@@ -47,15 +47,15 @@ async def sett(event):
     msg = await button.get_reply_message() 
     await event.delete()
     async with Drone.conversation(event.chat_id) as conv: 
-        xx = await conv.send_message("Send me any image for thumbnail as a `reply` to this message.")
+        xx = await conv.send_message("𝐒𝐞𝐧𝐝 𝐦𝐞 𝐀𝐧𝐲 𝐈𝐦𝐚𝐠𝐞 𝐟𝐨𝐫 𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 𝐚𝐬 𝐚 '𝐑𝐞𝐩𝐥𝐲' 𝐭𝐨 𝐓𝐡𝐢𝐬 𝐌𝐞𝐬𝐬𝐚𝐠𝐞.")
         x = await conv.get_reply()
         if not x.media:
-            xx.edit("No media found.")
+            xx.edit("𝐍𝐨 𝐦𝐞𝐝𝐢𝐚 𝐟𝐨𝐮𝐧𝐝.")
         mime = x.file.mime_type
         if not 'png' in mime:
             if not 'jpg' in mime:
                 if not 'jpeg' in mime:
-                    return await xx.edit("No image found.")
+                    return await xx.edit("𝐍𝐨 𝐢𝐦𝐚𝐠𝐞 𝐟𝐨𝐮𝐧𝐝.")
         await set_thumbnail(event, x.media)
         await xx.delete()
         
@@ -67,11 +67,11 @@ async def remt(event):
 @Drone.on(events.callbackquery.CallbackQuery(data="restart"))
 async def res(event):
     if not f'{event.sender_id}' == f'{int(AUTH_USERS)}':
-        return await event.edit("Only authorized user can restart!")
+        return await event.edit("𝐎𝐧𝐥𝐲 𝐀𝐮𝐭𝐡𝐨𝐫𝐢𝐳𝐞𝐝 𝐔𝐬𝐞𝐫 𝐜𝐚𝐧 𝐑𝐞𝐬𝐭𝐚𝐫𝐭!")
     result = await heroku_restart()
     if result is None:
-        await event.edit("You have not filled `HEROKU_API` and `HEROKU_APP_NAME` vars.")
+        await event.edit("𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐧𝐨𝐭 𝐅𝐢𝐥𝐥𝐞𝐝 `𝐇𝐄𝐑𝐎𝐊𝐔_𝐀𝐏𝐈` 𝐚𝐧𝐝 `𝐇𝐄𝐑𝐎𝐊𝐔_𝐀𝐏𝐏_𝐍𝐀𝐌𝐄` 𝐕𝐚𝐫𝐬.")
     elif result is False:
-        await event.edit("An error occured!")
+        await event.edit("𝐀𝐧 𝐄𝐫𝐫𝐨𝐫 𝐎𝐜𝐜𝐮𝐫𝐞𝐝!")
     elif result is True:
-        await event.edit("Restarting app, wait for a minute.")
+        await event.edit("𝐑𝐞𝐬𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐀𝐩𝐩 😉, 𝐖𝐚𝐢𝐭 𝐟𝐨𝐫 𝐚 𝐌𝐢𝐧𝐮𝐭𝐞.")
