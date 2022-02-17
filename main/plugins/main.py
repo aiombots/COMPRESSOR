@@ -31,7 +31,7 @@ async def compin(event):
                 return await event.reply(forcesubtext)
             banned = await db.is_banned(event.sender_id)
             if banned is True:
-                return await event.reply(f'you are Banned to use me!\n\ncontact [SUPPORT]({SUPPORT_LINK})', link_preview=False)
+                return await event.reply(𝐟'𝐲𝐨𝐮 𝐚𝐫𝐞 𝐁𝐚𝐧𝐧𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐌𝐞!\n\ncontact [SUPPORT]({SUPPORT_LINK})', link_preview=False)
             video = event.file.mime_type
             if 'video' in video:
                 await event.reply("📽",
@@ -118,7 +118,7 @@ async def vtmp3(event):
         await mp3(event, msg)
         os.rmdir("audioconvert")
     else:
-        await event.edit("Another process in progress!")
+        await event.edit("𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬!")
         
 @Drone.on(events.callbackquery.CallbackQuery(data="flac"))
 async def vtflac(event):
@@ -133,7 +133,7 @@ async def vtflac(event):
         await flac(event, msg)
         os.rmdir("audioconvert")
     else:
-        await event.edit("Another process in progress!")
+        await event.edit("𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬!")
         
 @Drone.on(events.callbackquery.CallbackQuery(data="wav"))
 async def vtwav(event):
@@ -148,7 +148,7 @@ async def vtwav(event):
         await wav(event, msg)
         os.rmdir("audioconvert")
     else:
-        await event.edit("Another process in progress!")
+        await event.edit("𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬!")
         
 @Drone.on(events.callbackquery.CallbackQuery(data="mp4"))
 async def vtmp4(event):
@@ -209,7 +209,7 @@ async def rename(event):
     msg = await button.get_reply_message()  
     await event.delete()
     async with Drone.conversation(event.chat_id) as conv: 
-        cm = await conv.send_message("Send me a new name for the file as a `reply` to this message.\n\n**NOTE:** `.ext` is not required.")                              
+        cm = await conv.send_message("Send Me a New Name For The File as A `reply` To This Message.\n\n**NOTE:** `.ext` is Not Required.")                              
         try:
             m = await conv.get_reply()
             new_name = m.text
@@ -218,7 +218,7 @@ async def rename(event):
                 return await cm.edit("No response found.")
         except Exception as e: 
             print(e)
-            return await cm.edit("An error occured while waiting for the response.")
+            return await cm.edit("𝐀𝐧 𝐄𝐫𝐫𝐨𝐫 𝐎𝐜𝐜𝐮𝐫𝐞𝐝 𝐖𝐡𝐢𝐥𝐞 𝐖𝐚𝐢𝐭𝐢𝐧𝐠 𝐟𝐨𝐫 𝐓𝐡𝐞 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞.")
     await media_rename(event, msg, new_name)                     
                    
 @Drone.on(events.callbackquery.CallbackQuery(data="hcomp"))
@@ -251,7 +251,7 @@ async def fcomp(event):
         await compress(event, msg, cmd)
         os.rmdir("compressmedia")
     else:
-        await event.edit("Another process in progress!")
+        await event.edit("𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬!")
 
                         
 @Drone.on(events.callbackquery.CallbackQuery(data="360"))
@@ -268,7 +268,7 @@ async def _360(event):
         await compress(event, msg, cmd)
         os.rmdir("compressmedia")
     else:
-        await event.edit("Another process in progress!")
+        await event.edit("𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬!")
 
 @Drone.on(events.callbackquery.CallbackQuery(data="540"))
 async def _1080(event):
@@ -284,7 +284,7 @@ async def _1080(event):
         await compress(event, msg, cmd)
         os.rmdir("compressmedia")
     else:
-        await event.edit("Another process in progress!")
+        await event.edit("𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬!")
 
 
         
@@ -302,7 +302,7 @@ async def _1080(event):
         await compress(event, msg, cmd)
         os.rmdir("compressmedia")
     else:
-        await event.edit("Another process in progress!")
+        await event.edit("𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬!")
 @Drone.on(events.callbackquery.CallbackQuery(data="480"))
 async def _480(event):
     yy = await force_sub(event.sender_id)
@@ -317,7 +317,7 @@ async def _480(event):
         await compress(event, msg, cmd)
         os.rmdir("compressmedia")
     else:
-        await event.edit("Another process in progress!")
+        await event.edit("𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬!")
         
 @Drone.on(events.callbackquery.CallbackQuery(data="00"))
 async def _640(event):
@@ -333,7 +333,7 @@ async def _640(event):
         await compress(event, msg, cmd)
         os.rmdir("compressmedia")
     else:
-        await event.edit("Another process in progress!")
+        await event.edit("𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬!")
     
          
 @Drone.on(events.callbackquery.CallbackQuery(data="trim"))
@@ -347,24 +347,24 @@ async def vtrim(event):
     markup = event.client.build_reply_markup(Button.force_reply())
     async with Drone.conversation(event.chat_id) as conv: 
         try:
-            xx = await conv.send_message("send me the start time of the video you want to trim from as a reply to this. \n\nIn format hh:mm:ss , for eg: `01:20:69` ", buttons=markup)
+            xx = await conv.send_message("𝐒𝐞𝐧𝐝 𝐌𝐞 𝐓𝐡𝐞 𝐒𝐭𝐚𝐫𝐭 𝐓𝐢𝐦𝐞 𝐨𝐟 𝐓𝐡𝐞 𝐕𝐢𝐝𝐞𝐨 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐭𝐨 𝐓𝐫𝐢𝐦 𝐅𝐫𝐨𝐦 𝐀𝐬 𝐀 𝐑𝐞𝐩𝐥𝐲 𝐭𝐨 𝐓𝐡𝐢𝐬. \n\n𝐈𝐧 𝐟𝐨𝐫𝐦𝐚𝐭 hh:mm:ss , 𝐅𝐨𝐫 𝐄𝐱: `01:20:69` ", buttons=markup)
             x = await conv.get_reply()
             st = x.text
             await xx.delete()                    
             if not st:               
-                return await xx.edit("No response found.")
+                return await xx.edit("𝐍𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐅𝐨𝐮𝐧𝐝.")
         except Exception as e: 
             print(e)
-            return await xx.edit("An error occured while waiting for the response.")
+            return await xx.edit("𝐀𝐧 𝐄𝐫𝐫𝐨𝐫 𝐎𝐜𝐜𝐮𝐫𝐞𝐝 𝐖𝐡𝐢𝐥𝐞 𝐖𝐚𝐢𝐭𝐢𝐧𝐠 𝐅𝐨𝐫 𝐭𝐡𝐞 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞.")
         try:
-            xy = await conv.send_message("send me the end time of the video you want to trim till as a reply to this.  \n\nIn format hh:mm:ss , for eg: `01:20:69` ", buttons=markup)
+            xy = await conv.send_message("𝐒𝐞𝐧𝐝 𝐌𝐞 𝐓𝐡𝐞 𝐒𝐭𝐚𝐫𝐭 𝐓𝐢𝐦𝐞 𝐨𝐟 𝐓𝐡𝐞 𝐕𝐢𝐝𝐞𝐨 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐭𝐨 𝐓𝐫𝐢𝐦 𝐅𝐫𝐨𝐦 𝐀𝐬 𝐀 𝐑𝐞𝐩𝐥𝐲 𝐭𝐨 𝐓𝐡𝐢𝐬.  \n\n𝐈𝐧 𝐟𝐨𝐫𝐦𝐚𝐭 hh:mm:ss , 𝐅𝐨𝐫 𝐄𝐱: `01:20:69` ", buttons=markup)
             y = await conv.get_reply()
             et = y.text
             await xy.delete()                    
             if not et:                
-                return await xy.edit("No response found.")
+                return await xy.edit("𝐍𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐅𝐨𝐮𝐧𝐝.")
         except Exception as e: 
             print(e)
-            return await xy.edit("An error occured while waiting for the response.")
+            return await xy.edit("𝐀𝐧 𝐄𝐫𝐫𝐨𝐫 𝐎𝐜𝐜𝐮𝐫𝐞𝐝 𝐖𝐡𝐢𝐥𝐞 𝐖𝐚𝐢𝐭𝐢𝐧𝐠 𝐅𝐨𝐫 𝐭𝐡𝐞 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞.")
         await trim(event, msg, st, et)
             
