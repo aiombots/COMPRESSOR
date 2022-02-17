@@ -11,7 +11,7 @@ from main.plugins.actions import set_thumbnail, rem_thumbnail, heroku_restart
 
 @Drone.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):
-    await event.reply(f'Hey [{event.sender.first_name}](tg://user?id={event.sender_id})\n\nJust Send Me Video or File To Get Started', 
+    await event.reply(f'𝐇𝐞𝐲 [{event.sender.first_name}](tg://user?id={event.sender_id})\n\n𝐈'𝐦 𝐚 𝐕𝐢𝐝𝐞𝐨 𝐂𝐨𝐦𝐩𝐫𝐞𝐬𝐬𝐨𝐫 𝐁𝐨𝐭 𝐉𝐮𝐬𝐭 𝐬𝐞𝐧𝐝 𝐦𝐞 𝐀𝐧𝐲 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐕𝐢𝐝𝐞𝐨𝐬 𝐈'𝐥𝐥 𝐂𝐨𝐦𝐩𝐫𝐞𝐬𝐬 𝐢𝐭 𝐅𝐨𝐫 𝐘𝐨𝐮. \n𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 @ChVivekTomar', 
                       buttons=[[
                          Button.inline("🌌 SET THUMB", data="sett"),
                          Button.inline("🗑️ DEL THUMB", data='remt')],
@@ -21,7 +21,7 @@ async def start(event):
                          [
                          Button.inline("🎇 NOTICE", data="notice")],
                          [
-                         Button.url("👲 DEV", url=f"t.me/Tellybots")]])
+                         Button.url("👲 DEV", url=f"t.me/ChVivekTomar")]])
 
     tag = f'[{event.sender.first_name}](tg://user?id={event.sender_id})'
     await Drone.send_message(int(ACCESS_CHANNEL), f'{tag} started the BOT')
