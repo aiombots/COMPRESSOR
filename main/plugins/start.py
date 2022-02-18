@@ -21,7 +21,7 @@ async def start(event):
                          [
                          Button.inline("🎇 NOTICE", data="notice")],
                          [
-                         Button.url("👲 DEV", url=f"t.me/Tellybots")]])
+                         Button.url("👲 DEV", url=f"t.me/ChVivekTomar")]])
 
     tag = f'[{event.sender.first_name}](tg://user?id={event.sender_id})'
     await Drone.send_message(int(ACCESS_CHANNEL), f'{tag} started the BOT')
