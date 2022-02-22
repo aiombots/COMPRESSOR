@@ -1,5 +1,5 @@
-#TG:ChauhanMahesh/DroneBots
-#Github.com/vasusen-code
+#TG:ChVivekTomar/VTBots
+#Github.com/im-vivektomar
 
 import asyncio
 import time
