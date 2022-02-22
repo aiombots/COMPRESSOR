@@ -3,13 +3,13 @@
 
 START_TEXT = "𝐉𝐮𝐬𝐭 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐕𝐢𝐝𝐞𝐨 𝐨𝐫 𝐅𝐢𝐥𝐞 𝐓𝐨 𝐆𝐞𝐭 𝐭𝐡𝐞 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐒𝐭𝐚𝐫𝐭𝐞𝐝."
 
-FORCE_SUB_TEXT = "In order to use this bot, you've to join my parent channel."
+FORCE_SUB_TEXT = "𝐈𝐧 𝐎𝐫𝐝𝐞𝐫 𝐭𝐨 𝐔𝐬𝐞 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭, 𝐘𝐨𝐮'𝐯𝐞 𝐭𝐨 𝐉𝐨𝐢𝐧 𝐌𝐲 𝐏𝐚𝐫𝐞𝐧𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥."
 
 CHANNEL_LINK = "https://t.me/VTBots"
 
 SUPPORT_LINK = "https://t.me/VTBotsDiscussion"
 
-info_text = "This bot is developed by @ChVivekTomar\n\nWritten in python library TELETHON.\n\nBot by : @VTBots\nSupport : @VTBotsDiscussion\n\nV1.3"   
+info_text = "This bot is developed by @ChVivekTomar\n\nWritten in python library TELETHON.\n\nBot By : @ChVivekTomar\nSupport : @VTBotsDiscussion\n\nV1.3"   
 
 help_text = "Send me any media file to know the stuffs i can do.\n\ncompress - negligible loss compression\nconvert - change formats or extract audio of any video\nrename - rename any file, extension not required\ntrim - cut your videos" 
 
