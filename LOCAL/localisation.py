@@ -1,7 +1,7 @@
 #Don't be a thief by stealing other's Hardwork, it took time and effort to make this repo.
 #Respect my work by not making any changes here.
 
-START_TEXT = "Send me any file to begin."
+START_TEXT = "𝐉𝐮𝐬𝐭 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐕𝐢𝐝𝐞𝐨 𝐨𝐫 𝐅𝐢𝐥𝐞 𝐓𝐨 𝐆𝐞𝐭 𝐭𝐡𝐞 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐒𝐭𝐚𝐫𝐭𝐞𝐝."
 
 FORCE_SUB_TEXT = "In order to use this bot, you've to join my parent channel."
 
@@ -17,7 +17,7 @@ source_text = "Deploy your own bot.\n\nMain branch - Personal use\nPublic branch
 
 DEV = "https://t.me/ChVivekTomar"
 
-spam_notice = "This bot is hosted on heroku, and hence can run just run one process at a time.Spamming the bot or encoding adult videos will lead you to a ban."
+spam_notice = "𝐓𝐡𝐢𝐬 𝐁𝐨𝐭 𝐢𝐬 𝐇𝐨𝐬𝐭𝐞𝐝 𝐨𝐧 𝐇𝐞𝐫𝐨𝐤𝐮 𝐚𝐧𝐝 𝐓𝐡𝐚𝐭'𝐬 𝐖𝐡𝐲 𝐜𝐚𝐧  𝐉𝐮𝐬𝐭 𝐑𝐮𝐧 𝐎𝐧𝐞 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐚𝐭 𝐚 𝐓𝐢𝐦𝐞.𝐒𝐩𝐚𝐦𝐦𝐢𝐧𝐠 𝐓𝐡𝐞 𝐁𝐨𝐭 𝐨𝐫 𝐄𝐧𝐜𝐨𝐝𝐢𝐧𝐠 𝐀𝐝𝐮𝐥𝐭 𝐕𝐢𝐝𝐞𝐨𝐬 𝐰𝐢𝐥𝐥 𝐋𝐞𝐚𝐝 𝐘𝐨𝐮 𝐭𝐨 𝐚 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐁𝐚𝐧."
 
 JPG = "LOCAL/video_convertor.jpg"
 
