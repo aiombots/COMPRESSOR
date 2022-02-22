@@ -1,5 +1,5 @@
-#tg:chauhanMahesh/DroneBots
-#github.com/vasusen-code
+#TG:ChVivekTomar/VTBots
+#Github.com/im-vivektomar
  
 from .. import Drone, AUTH_USERS, MONGODB_URI
 from telethon import events, Button
