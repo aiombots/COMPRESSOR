@@ -1,5 +1,5 @@
-#Tg:ChauhanMahesh/Dronebots
-#Github.com/vasusen-code
+#TG:ChVivekTomar/VTBots
+#Github.com/im-vivektomar
 
 import os
 import time
